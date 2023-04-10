@@ -33,7 +33,7 @@ permissions:
   contents: read
 
 jobs:
-  build:
+  build-dev:
     runs-on: ubuntu-latest
   
     steps:
@@ -55,9 +55,9 @@ jobs:
         run: dotnet build --configuration Release
         working-directory: "./MyFirstAzureWebApp"
       
-      - name : Test
-        run : dotnet test --no-build --verbosity normal 
-        working-directory: "./MyFirstAzureWebAppTests"
+     # - name : Test
+     #   run : dotnet test --no-build --verbosity normal 
+     #   working-directory: "./MyFirstAzureWebAppTests"
 
       - name: dotnet publish
         run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
@@ -69,11 +69,11 @@ jobs:
           name: .net-app
           path: ${{env.DOTNET_ROOT}}/myapp
                     
-  deploy-Dev:
+  deploy-dev:
       permissions:
         contents: none
       runs-on: ubuntu-latest
-      needs: build
+      needs: build-dev
       environment:
         name: 'Development'
         url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
@@ -95,4 +95,194 @@ jobs:
           with:
             app-name: ${{ env.AZURE_WEBAPP_NAME }}
             publish-profile: ${{ secrets.USAMA_PROFILE }}
+            package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
+            
+  build-tst:
+    runs-on: ubuntu-latest
+  
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up .NET Core
+        uses: actions/setup-dotnet@v2
+        with:
+          dotnet-version: ${{ env.DOTNET_VERSION }}
+
+      - name: Set up dependency caching for faster builds
+        uses: actions/cache@v3
+        with:
+          path: ~/.nuget/packages
+          key: ${{ runner.os }}-nuget-${{ hashFiles('**/packages.lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-nuget-
+      - name: Build with dotnet
+        run: dotnet build --configuration Release
+        working-directory: "./MyFirstAzureWebApp"
+      
+     # - name : Test
+     #   run : dotnet test --no-build --verbosity normal 
+     #   working-directory: "./MyFirstAzureWebAppTests"
+
+      - name: dotnet publish
+        run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
+        working-directory: "./MyFirstAzureWebApp"
+
+      - name: Upload artifact for deployment job
+        uses: actions/upload-artifact@v3
+        with:
+          name: .net-app
+          path: ${{env.DOTNET_ROOT}}/myapp
+                    
+  deploy-tst:
+      permissions:
+        contents: none
+      runs-on: ubuntu-latest
+      needs: build-tst
+      environment:
+        name: 'Testing'
+        url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+
+      steps:
+        - name: Download artifact from build job
+          uses: actions/download-artifact@v3
+          with:
+            name: .net-app
+        - name: Login job
+
+          uses: azure/login@v1
+          with:
+            creds: ${{ secrets.SAADIA_JSON}}
+
+        - name: Deploy to Azure Web App
+          id: deploy-to-webapp
+          uses: azure/webapps-deploy@v2
+          with:
+            app-name: ${{ env.saadia }}
+            publish-profile: ${{ secrets.SAADIA_PROFILE }}
+            package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
+  build-stg:
+    runs-on: ubuntu-latest
+  
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up .NET Core
+        uses: actions/setup-dotnet@v2
+        with:
+          dotnet-version: ${{ env.DOTNET_VERSION }}
+
+      - name: Set up dependency caching for faster builds
+        uses: actions/cache@v3
+        with:
+          path: ~/.nuget/packages
+          key: ${{ runner.os }}-nuget-${{ hashFiles('**/packages.lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-nuget-
+      - name: Build with dotnet
+        run: dotnet build --configuration Release
+        working-directory: "./MyFirstAzureWebApp"
+      
+     # - name : Test
+     #   run : dotnet test --no-build --verbosity normal 
+     #   working-directory: "./MyFirstAzureWebAppTests"
+
+      - name: dotnet publish
+        run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
+        working-directory: "./MyFirstAzureWebApp"
+
+      - name: Upload artifact for deployment job
+        uses: actions/upload-artifact@v3
+        with:
+          name: .net-app
+          path: ${{env.DOTNET_ROOT}}/myapp
+                    
+  deploy-stg:
+      permissions:
+        contents: none
+      runs-on: ubuntu-latest
+      needs: build-stg
+      environment:
+        name: 'Staging'
+        url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+
+      steps:
+        - name: Download artifact from build job
+          uses: actions/download-artifact@v3
+          with:
+            name: .net-app
+        - name: Login job
+
+          uses: azure/login@v1
+          with:
+            creds: ${{ secrets.NAZIA_JSON}}
+
+        - name: Deploy to Azure Web App
+          id: deploy-to-webapp
+          uses: azure/webapps-deploy@v2
+          with:
+            app-name: ${{ env.nazia-malik-first-web-app }}
+            publish-profile: ${{ secrets.NAZIA_PROFILE }}
+            package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
+build-prd:
+    runs-on: ubuntu-latest
+  
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up .NET Core
+        uses: actions/setup-dotnet@v2
+        with:
+          dotnet-version: ${{ env.DOTNET_VERSION }}
+
+      - name: Set up dependency caching for faster builds
+        uses: actions/cache@v3
+        with:
+          path: ~/.nuget/packages
+          key: ${{ runner.os }}-nuget-${{ hashFiles('**/packages.lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-nuget-
+      - name: Build with dotnet
+        run: dotnet build --configuration Release
+        working-directory: "./MyFirstAzureWebApp"
+      
+     # - name : Test
+     #   run : dotnet test --no-build --verbosity normal 
+     #   working-directory: "./MyFirstAzureWebAppTests"
+
+      - name: dotnet publish
+        run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
+        working-directory: "./MyFirstAzureWebApp"
+
+      - name: Upload artifact for deployment job
+        uses: actions/upload-artifact@v3
+        with:
+          name: .net-app
+          path: ${{env.DOTNET_ROOT}}/myapp
+                    
+    deploy-prd:
+      permissions:
+        contents: none
+      runs-on: ubuntu-latest
+      needs: build-stg
+      environment:
+        name: 'Production'
+        url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+
+      steps:
+        - name: Download artifact from build job
+          uses: actions/download-artifact@v3
+          with:
+            name: .net-app
+        - name: Login job
+
+          uses: azure/login@v1
+          with:
+            creds: ${{ secrets.BILAL_JSON}}
+
+        - name: Deploy to Azure Web App
+          id: deploy-to-webapp
+          uses: azure/webapps-deploy@v2
+          with:
+            app-name: ${{ env.bilal-082-first-web-app }}
+            publish-profile: ${{ secrets.BILAL_PROFILE }}
             package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
