@@ -16,4 +16,8 @@ public class IndexModel : PageModel
     {
 
     }
+    public int add (int a, int b)
+    {
+        return a + b;
+    }
 }
