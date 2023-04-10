@@ -84,7 +84,7 @@ jobs:
 
         uses: azure/login@v1
         with:
-            creds: ${{ secrets.USAMA_JSON }}
+          creds: ${{ secrets.USAMA_JSON }}
    
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
