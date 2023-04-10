@@ -102,6 +102,7 @@ jobs:
   
     steps:
       - uses: actions/checkout@v3
+           needs:deploy-dev
 
       - name: Set up .NET Core
         uses: actions/setup-dotnet@v2
@@ -165,6 +166,7 @@ jobs:
   
     steps:
       - uses: actions/checkout@v3
+          needs:deploy-stg
 
       - name: Set up .NET Core
         uses: actions/setup-dotnet@v2
@@ -223,11 +225,12 @@ jobs:
             app-name: ${{ env.nazia-malik-first-web-app }}
             publish-profile: ${{ secrets.NAZIA_PROFILE }}
             package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
-build-prd:
+  build-prd:
     runs-on: ubuntu-latest
   
     steps:
       - uses: actions/checkout@v3
+          needs:deploy-stg
 
       - name: Set up .NET Core
         uses: actions/setup-dotnet@v2
@@ -259,11 +262,11 @@ build-prd:
           name: .net-app
           path: ${{env.DOTNET_ROOT}}/myapp
                     
-    deploy-prd:
+  deploy-prd:
       permissions:
         contents: none
       runs-on: ubuntu-latest
-      needs: build-stg
+      needs: build-prd
       environment:
         name: 'Production'
         url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
