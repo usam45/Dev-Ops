@@ -14,7 +14,8 @@ public class IndexModel : PageModel
 
     public void OnGet()
     {
-
+        var environment = _configuration["BuildEnvironment:Name"];
+        ViewData["environment"] = environment;
     }
     public int add (int a, int b)
     {
