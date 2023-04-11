@@ -117,7 +117,7 @@ jobs:
             ${{ runner.os }}-nuget-
 
       - name: Build with dotnet
-        run: dotnet build --configuration Release
+        run: dotnet build --configuration Testing
         working-directory: "./MyFirstAzureWebApp"
 
       - name: dotnet publish
@@ -180,7 +180,7 @@ jobs:
             ${{ runner.os }}-nuget-
 
       - name: Build with dotnet
-        run: dotnet build --configuration Release
+        run: dotnet build --configuration StagingPublish
         working-directory: "./MyFirstAzureWebApp"
 
       - name: dotnet publish
@@ -243,7 +243,7 @@ jobs:
             ${{ runner.os }}-nuget-
 
       - name: Build with dotnet
-        run: dotnet build --configuration Release
+        run: dotnet build --configuration ProductionPublish
         working-directory: "./MyFirstAzureWebApp"
 
       - name: dotnet publish
