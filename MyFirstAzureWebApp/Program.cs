@@ -11,7 +11,7 @@ environmentName = "Development";
 environmentName = "Development";
 #elif TESTING
 environmentName = "Testing";
-#elif STAGINGPUBLISH 
+#elif STAGING
 environmentName = "Staging";
 #else
 environmentName = "Production";
