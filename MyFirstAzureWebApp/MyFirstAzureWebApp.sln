@@ -5,22 +5,42 @@ VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFirstAzureWebApp", "MyFirstAzureWebApp.csproj", "{AFC5F863-868C-4BA1-9711-CEBB2E0C62F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstAzureWebAppTests", "..\MyFirstAzureWebAppTests\MyFirstAzureWebAppTests.csproj", "{ED68AD79-9F11-48D7-9BF5-6D592958ED17}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFirstAzureWebAppTests", "..\MyFirstAzureWebAppTests\MyFirstAzureWebAppTests.csproj", "{ED68AD79-9F11-48D7-9BF5-6D592958ED17}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Development|Any CPU = Development|Any CPU
+		ProductionPublish|Any CPU = ProductionPublish|Any CPU
 		Release|Any CPU = Release|Any CPU
+		StagingPublish|Any CPU = StagingPublish|Any CPU
+		Testing|Any CPU = Testing|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{AFC5F863-868C-4BA1-9711-CEBB2E0C62F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AFC5F863-868C-4BA1-9711-CEBB2E0C62F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFC5F863-868C-4BA1-9711-CEBB2E0C62F2}.Development|Any CPU.ActiveCfg = Development|Any CPU
+		{AFC5F863-868C-4BA1-9711-CEBB2E0C62F2}.Development|Any CPU.Build.0 = Development|Any CPU
+		{AFC5F863-868C-4BA1-9711-CEBB2E0C62F2}.ProductionPublish|Any CPU.ActiveCfg = ProductionPublish|Any CPU
+		{AFC5F863-868C-4BA1-9711-CEBB2E0C62F2}.ProductionPublish|Any CPU.Build.0 = ProductionPublish|Any CPU
 		{AFC5F863-868C-4BA1-9711-CEBB2E0C62F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFC5F863-868C-4BA1-9711-CEBB2E0C62F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFC5F863-868C-4BA1-9711-CEBB2E0C62F2}.StagingPublish|Any CPU.ActiveCfg = StagingPublish|Any CPU
+		{AFC5F863-868C-4BA1-9711-CEBB2E0C62F2}.StagingPublish|Any CPU.Build.0 = StagingPublish|Any CPU
+		{AFC5F863-868C-4BA1-9711-CEBB2E0C62F2}.Testing|Any CPU.ActiveCfg = Testing|Any CPU
+		{AFC5F863-868C-4BA1-9711-CEBB2E0C62F2}.Testing|Any CPU.Build.0 = Testing|Any CPU
 		{ED68AD79-9F11-48D7-9BF5-6D592958ED17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{ED68AD79-9F11-48D7-9BF5-6D592958ED17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED68AD79-9F11-48D7-9BF5-6D592958ED17}.Development|Any CPU.ActiveCfg = Development|Any CPU
+		{ED68AD79-9F11-48D7-9BF5-6D592958ED17}.Development|Any CPU.Build.0 = Development|Any CPU
+		{ED68AD79-9F11-48D7-9BF5-6D592958ED17}.ProductionPublish|Any CPU.ActiveCfg = ProductionPublish|Any CPU
+		{ED68AD79-9F11-48D7-9BF5-6D592958ED17}.ProductionPublish|Any CPU.Build.0 = ProductionPublish|Any CPU
 		{ED68AD79-9F11-48D7-9BF5-6D592958ED17}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED68AD79-9F11-48D7-9BF5-6D592958ED17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED68AD79-9F11-48D7-9BF5-6D592958ED17}.StagingPublish|Any CPU.ActiveCfg = StagingPublish|Any CPU
+		{ED68AD79-9F11-48D7-9BF5-6D592958ED17}.StagingPublish|Any CPU.Build.0 = StagingPublish|Any CPU
+		{ED68AD79-9F11-48D7-9BF5-6D592958ED17}.Testing|Any CPU.ActiveCfg = Testing|Any CPU
+		{ED68AD79-9F11-48D7-9BF5-6D592958ED17}.Testing|Any CPU.Build.0 = Testing|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
