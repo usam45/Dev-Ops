@@ -57,9 +57,9 @@ jobs:
         run: dotnet build --configuration Release
         working-directory: "./MyFirstAzureWebApp"
      
-      #- name : Test
-       # run : dotnet test --no-build --verbosity normal 
-       # working-directory: "./FirstAzureProjectTests"
+      - name : Test
+        run : dotnet test --no-build --verbosity normal 
+        working-directory: "./FirstAzureProjectTests"
 
 
       - name: dotnet publish
