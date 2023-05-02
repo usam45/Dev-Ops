@@ -33,7 +33,7 @@ namespace MyFirstAzureWebApp.Pages.Tests
 		[TestMethod]
 		public void Add_ByAddingTwoNumbers_returns_sum_of_numbers_smart()
 		{
-			Assert.AreEqual(12, _indexModel.add(9, 6));
+			Assert.AreEqual(12, _indexModel.add(6, 6));
 		}
 	}
 }
