@@ -1,5 +1,8 @@
 E:\Usama Arshad\MS SE\Semester 01\DevOps\Dev-Ops\Dev-Ops\MyFirstAzureWebApp\bin\Debug\net6.0\appsettings.Development.json
 E:\Usama Arshad\MS SE\Semester 01\DevOps\Dev-Ops\Dev-Ops\MyFirstAzureWebApp\bin\Debug\net6.0\appsettings.json
+E:\Usama Arshad\MS SE\Semester 01\DevOps\Dev-Ops\Dev-Ops\MyFirstAzureWebApp\bin\Debug\net6.0\appsettings.Production.json
+E:\Usama Arshad\MS SE\Semester 01\DevOps\Dev-Ops\Dev-Ops\MyFirstAzureWebApp\bin\Debug\net6.0\appsettings.Staging.json
+E:\Usama Arshad\MS SE\Semester 01\DevOps\Dev-Ops\Dev-Ops\MyFirstAzureWebApp\bin\Debug\net6.0\appsettings.Testing.json
 E:\Usama Arshad\MS SE\Semester 01\DevOps\Dev-Ops\Dev-Ops\MyFirstAzureWebApp\bin\Debug\net6.0\MyFirstAzureWebApp.staticwebassets.runtime.json
 E:\Usama Arshad\MS SE\Semester 01\DevOps\Dev-Ops\Dev-Ops\MyFirstAzureWebApp\bin\Debug\net6.0\MyFirstAzureWebApp.exe
 E:\Usama Arshad\MS SE\Semester 01\DevOps\Dev-Ops\Dev-Ops\MyFirstAzureWebApp\bin\Debug\net6.0\MyFirstAzureWebApp.deps.json
@@ -29,6 +32,3 @@ E:\Usama Arshad\MS SE\Semester 01\DevOps\Dev-Ops\Dev-Ops\MyFirstAzureWebApp\obj\
 E:\Usama Arshad\MS SE\Semester 01\DevOps\Dev-Ops\Dev-Ops\MyFirstAzureWebApp\obj\Debug\net6.0\MyFirstAzureWebApp.pdb
 E:\Usama Arshad\MS SE\Semester 01\DevOps\Dev-Ops\Dev-Ops\MyFirstAzureWebApp\obj\Debug\net6.0\MyFirstAzureWebApp.genruntimeconfig.cache
 E:\Usama Arshad\MS SE\Semester 01\DevOps\Dev-Ops\Dev-Ops\MyFirstAzureWebApp\obj\Debug\net6.0\ref\MyFirstAzureWebApp.dll
-E:\Usama Arshad\MS SE\Semester 01\DevOps\Dev-Ops\Dev-Ops\MyFirstAzureWebApp\bin\Debug\net6.0\appsettings.ProductionPublish.json
-E:\Usama Arshad\MS SE\Semester 01\DevOps\Dev-Ops\Dev-Ops\MyFirstAzureWebApp\bin\Debug\net6.0\appsettings.StagingPublish.json
-E:\Usama Arshad\MS SE\Semester 01\DevOps\Dev-Ops\Dev-Ops\MyFirstAzureWebApp\bin\Debug\net6.0\appsettings.Testing.json

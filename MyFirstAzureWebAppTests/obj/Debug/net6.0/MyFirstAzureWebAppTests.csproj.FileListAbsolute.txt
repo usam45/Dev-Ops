@@ -4,6 +4,9 @@ E:\Usama Arshad\MS SE\Semester 01\DevOps\Dev-Ops\Dev-Ops\MyFirstAzureWebAppTests
 E:\Usama Arshad\MS SE\Semester 01\DevOps\Dev-Ops\Dev-Ops\MyFirstAzureWebAppTests\bin\Debug\net6.0\MyFirstAzureWebApp.runtimeconfig.json
 E:\Usama Arshad\MS SE\Semester 01\DevOps\Dev-Ops\Dev-Ops\MyFirstAzureWebAppTests\bin\Debug\net6.0\appsettings.Development.json
 E:\Usama Arshad\MS SE\Semester 01\DevOps\Dev-Ops\Dev-Ops\MyFirstAzureWebAppTests\bin\Debug\net6.0\appsettings.json
+E:\Usama Arshad\MS SE\Semester 01\DevOps\Dev-Ops\Dev-Ops\MyFirstAzureWebAppTests\bin\Debug\net6.0\appsettings.Production.json
+E:\Usama Arshad\MS SE\Semester 01\DevOps\Dev-Ops\Dev-Ops\MyFirstAzureWebAppTests\bin\Debug\net6.0\appsettings.Staging.json
+E:\Usama Arshad\MS SE\Semester 01\DevOps\Dev-Ops\Dev-Ops\MyFirstAzureWebAppTests\bin\Debug\net6.0\appsettings.Testing.json
 E:\Usama Arshad\MS SE\Semester 01\DevOps\Dev-Ops\Dev-Ops\MyFirstAzureWebAppTests\bin\Debug\net6.0\MyFirstAzureWebApp.staticwebassets.runtime.json
 E:\Usama Arshad\MS SE\Semester 01\DevOps\Dev-Ops\Dev-Ops\MyFirstAzureWebAppTests\bin\Debug\net6.0\MyFirstAzureWebApp.exe
 E:\Usama Arshad\MS SE\Semester 01\DevOps\Dev-Ops\Dev-Ops\MyFirstAzureWebAppTests\bin\Debug\net6.0\testhost.exe

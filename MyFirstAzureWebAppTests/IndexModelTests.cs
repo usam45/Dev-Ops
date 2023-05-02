@@ -14,7 +14,7 @@ namespace MyFirstAzureWebApp.Pages.Tests
 		private readonly IndexModel _indexModel;
 		public IndexModelTests(IndexModel indexModel)
 		{
-			_indexModel = indexModel;
+			_indexModel = new IndexModel(null, null); ;
 		}
 
 		[TestMethod()]
@@ -36,7 +36,7 @@ namespace MyFirstAzureWebApp.Pages.Tests
 		[TestMethod]
 		public void Add_ByAddingTwoNumbers_returns_sum_of_numbers_smart()
 		{
-			Assert.AreEqual(13, _indexModel.add(6, 7));
+			Assert.AreEqual(41, _indexModel.add(30, 10));
 		}
 	}
 
