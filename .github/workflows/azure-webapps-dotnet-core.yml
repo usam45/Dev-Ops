@@ -58,8 +58,8 @@ jobs:
         working-directory: "./MyFirstAzureWebApp"
      
       #- name : Test
-      #  run : dotnet test --no-build --verbosity normal 
-      #  working-directory: "./FirstAzureProjectTests"
+       # run : dotnet test --no-build --verbosity normal 
+       # working-directory: "./FirstAzureProjectTests"
 
 
       - name: dotnet publish
@@ -126,8 +126,8 @@ jobs:
         working-directory: "./MyFirstAzureWebApp"
         
      # - name : Test
-     #   run : dotnet test --no-build --verbosity normal 
-     #   working-directory: "./FirstAzureProjectTests"
+      #  run : dotnet test --no-build --verbosity normal 
+      #  working-directory: "./FirstAzureProjectTests"
 
       - name: dotnet publish
         run: dotnet publish -c Testing -o ${{env.DOTNET_ROOT}}/myapp
@@ -193,7 +193,7 @@ jobs:
         run: dotnet build --configuration StagingPublish
         working-directory: "./MyFirstAzureWebApp"
       
-      #- name : Test
+     # - name : Test
       #  run : dotnet test --no-build --verbosity normal 
       #  working-directory: "./FirstAzureProjectTests"  
 
@@ -260,7 +260,7 @@ jobs:
         run: dotnet build --configuration ProductionPublish
         working-directory: "./MyFirstAzureWebApp"
       
-      #- name : Test
+     # - name : Test
       #  run : dotnet test --no-build --verbosity normal 
       #  working-directory: "./FirstAzureProjectTests"
 
