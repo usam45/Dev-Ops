@@ -10,9 +10,15 @@ namespace MyFirstAzureWebApp
         public void main()
         {
             IWebDriver driver = new ChromeDriver("D:\\softwares\\chromedriver_win32\\chromedriver.exe");
-            driver.Url = "https://usama-arshad-first-web-app.azurewebsites.net/";
+            driver.Url = " https://usama-arshad-first-web-app.azurewebsites.net/";
+            IWebElement emailField = driver.FindElement(By.Id("email"));
+            IWebElement passwordField = driver.FindElement(By.Id("password"));
 
-            IWebDriver email = driver.FindElement
+            emailField.SendKeys("admin@admin.com");
+            passwordField.SendKeys("admin");
+
+            // Submit the form
+            passwordField.Submit();
 
         }
     }
