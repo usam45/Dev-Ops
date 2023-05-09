@@ -6796,11 +6796,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Usama Arshad\\MS SE\\Semester 01\\DevOps\\Dev-Ops\\Dev-Ops\\MyFirstAzureWebAppTests\\MyFirstAzureWebAppTests.csproj",
+      "projectUniqueName": "E:\\Usama Arshad\\MS SE\\Semester 01\\DevOps\\DevOps\\MyFirstAzureWebAppTests\\MyFirstAzureWebAppTests.csproj",
       "projectName": "MyFirstAzureWebAppTests",
-      "projectPath": "E:\\Usama Arshad\\MS SE\\Semester 01\\DevOps\\Dev-Ops\\Dev-Ops\\MyFirstAzureWebAppTests\\MyFirstAzureWebAppTests.csproj",
+      "projectPath": "E:\\Usama Arshad\\MS SE\\Semester 01\\DevOps\\DevOps\\MyFirstAzureWebAppTests\\MyFirstAzureWebAppTests.csproj",
       "packagesPath": "C:\\Users\\SH\\.nuget\\packages\\",
-      "outputPath": "E:\\Usama Arshad\\MS SE\\Semester 01\\DevOps\\Dev-Ops\\Dev-Ops\\MyFirstAzureWebAppTests\\obj\\",
+      "outputPath": "E:\\Usama Arshad\\MS SE\\Semester 01\\DevOps\\DevOps\\MyFirstAzureWebAppTests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\SH\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6817,8 +6817,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "E:\\Usama Arshad\\MS SE\\Semester 01\\DevOps\\Dev-Ops\\Dev-Ops\\MyFirstAzureWebApp\\MyFirstAzureWebApp.csproj": {
-              "projectPath": "E:\\Usama Arshad\\MS SE\\Semester 01\\DevOps\\Dev-Ops\\Dev-Ops\\MyFirstAzureWebApp\\MyFirstAzureWebApp.csproj"
+            "E:\\Usama Arshad\\MS SE\\Semester 01\\DevOps\\DevOps\\MyFirstAzureWebApp\\MyFirstAzureWebApp.csproj": {
+              "projectPath": "E:\\Usama Arshad\\MS SE\\Semester 01\\DevOps\\DevOps\\MyFirstAzureWebApp\\MyFirstAzureWebApp.csproj"
             }
           }
         }

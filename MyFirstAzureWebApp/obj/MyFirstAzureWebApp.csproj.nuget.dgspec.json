@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Usama Arshad\\MS SE\\Semester 01\\DevOps\\Dev-Ops\\Dev-Ops\\MyFirstAzureWebApp\\MyFirstAzureWebApp.csproj": {}
+    "E:\\Usama Arshad\\MS SE\\Semester 01\\DevOps\\DevOps\\MyFirstAzureWebApp\\MyFirstAzureWebApp.csproj": {}
   },
   "projects": {
-    "E:\\Usama Arshad\\MS SE\\Semester 01\\DevOps\\Dev-Ops\\Dev-Ops\\MyFirstAzureWebApp\\MyFirstAzureWebApp.csproj": {
+    "E:\\Usama Arshad\\MS SE\\Semester 01\\DevOps\\DevOps\\MyFirstAzureWebApp\\MyFirstAzureWebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Usama Arshad\\MS SE\\Semester 01\\DevOps\\Dev-Ops\\Dev-Ops\\MyFirstAzureWebApp\\MyFirstAzureWebApp.csproj",
+        "projectUniqueName": "E:\\Usama Arshad\\MS SE\\Semester 01\\DevOps\\DevOps\\MyFirstAzureWebApp\\MyFirstAzureWebApp.csproj",
         "projectName": "MyFirstAzureWebApp",
-        "projectPath": "E:\\Usama Arshad\\MS SE\\Semester 01\\DevOps\\Dev-Ops\\Dev-Ops\\MyFirstAzureWebApp\\MyFirstAzureWebApp.csproj",
+        "projectPath": "E:\\Usama Arshad\\MS SE\\Semester 01\\DevOps\\DevOps\\MyFirstAzureWebApp\\MyFirstAzureWebApp.csproj",
         "packagesPath": "C:\\Users\\SH\\.nuget\\packages\\",
-        "outputPath": "E:\\Usama Arshad\\MS SE\\Semester 01\\DevOps\\Dev-Ops\\Dev-Ops\\MyFirstAzureWebApp\\obj\\",
+        "outputPath": "E:\\Usama Arshad\\MS SE\\Semester 01\\DevOps\\DevOps\\MyFirstAzureWebApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SH\\AppData\\Roaming\\NuGet\\NuGet.Config",
