@@ -7,10 +7,10 @@ namespace MyFirstAzureWebApp
 {
     public class login
     {
-        public void main()
+        static void Main(string[] args)
         {
             IWebDriver driver = new ChromeDriver("D:\\softwares\\chromedriver_win32\\chromedriver.exe");
-            driver.Url = " https://usama-arshad-first-web-app.azurewebsites.net/";
+            driver.Url = "https://www.google.com/";
             IWebElement emailField = driver.FindElement(By.Id("email"));
             IWebElement passwordField = driver.FindElement(By.Id("password"));
 
