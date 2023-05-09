@@ -20,6 +20,20 @@ public class IndexModel : PageModel
         var environment = _configuration["BuildEnvironment:Name"];
         ViewData["environment"] = environment;
     }
+
+
+   
+    public void  OnPost(string email, string password)
+    {
+        if (email != null && password != null )
+        {
+            if (email== "admin@admin.com" && password == "admin")
+            {
+                ViewData["message"] = "you have logged-In successfully";
+            }
+        }
+    }
+    
     public int add (int a, int b)
     {
         return a + b;

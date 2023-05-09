@@ -7,4 +7,8 @@
     <Configurations>Debug;Release;Testing;ProductionPublish;Development;StagingPublish</Configurations>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Selenium.WebDriver" Version="4.9.1" />
+  </ItemGroup>
+
 </Project>
