@@ -10,6 +10,7 @@ namespace MyFirstAzureWebApp
         public void main()
         {
             IWebDriver driver = new ChromeDriver("D:\\softwares\\chromedriver_win32\\chromedriver.exe");
+            driver.Url = "https://usama-arshad-first-web-app.azurewebsites.net/";
         }
     }
 }
