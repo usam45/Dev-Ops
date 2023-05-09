@@ -66,3 +66,9 @@ E:\Usama Arshad\MS SE\Semester 01\DevOps\DevOps\MyFirstAzureWebApp\obj\Debug\net
 E:\Usama Arshad\MS SE\Semester 01\DevOps\DevOps\MyFirstAzureWebApp\obj\Debug\net6.0\MyFirstAzureWebApp.pdb
 E:\Usama Arshad\MS SE\Semester 01\DevOps\DevOps\MyFirstAzureWebApp\obj\Debug\net6.0\MyFirstAzureWebApp.genruntimeconfig.cache
 E:\Usama Arshad\MS SE\Semester 01\DevOps\DevOps\MyFirstAzureWebApp\obj\Debug\net6.0\ref\MyFirstAzureWebApp.dll
+E:\Usama Arshad\MS SE\Semester 01\DevOps\DevOps\MyFirstAzureWebApp\bin\Debug\net6.0\selenium-manager\linux\selenium-manager
+E:\Usama Arshad\MS SE\Semester 01\DevOps\DevOps\MyFirstAzureWebApp\bin\Debug\net6.0\selenium-manager\macos\selenium-manager
+E:\Usama Arshad\MS SE\Semester 01\DevOps\DevOps\MyFirstAzureWebApp\bin\Debug\net6.0\selenium-manager\windows\selenium-manager.exe
+E:\Usama Arshad\MS SE\Semester 01\DevOps\DevOps\MyFirstAzureWebApp\bin\Debug\net6.0\Newtonsoft.Json.dll
+E:\Usama Arshad\MS SE\Semester 01\DevOps\DevOps\MyFirstAzureWebApp\bin\Debug\net6.0\WebDriver.dll
+E:\Usama Arshad\MS SE\Semester 01\DevOps\DevOps\MyFirstAzureWebApp\obj\Debug\net6.0\MyFirstAzureWebApp.csproj.CopyComplete
