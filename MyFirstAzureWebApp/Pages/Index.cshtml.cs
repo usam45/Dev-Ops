@@ -27,7 +27,6 @@ public class IndexModel : PageModel
         driver.Url = "https://usama-arshad-first-web-app.azurewebsites.net/";
         IWebElement emailField = driver.FindElement(By.Id("email"));
         IWebElement passwordField = driver.FindElement(By.Id("password"));
-
         emailField.SendKeys("admin@admin.com");
         passwordField.SendKeys("admin");
 
